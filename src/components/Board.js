@@ -10,9 +10,7 @@ class Board extends Component {
       board: this.createBoard()
     };
   }
-  componentDidMount() {
-    console.log(this.state.board);
-  }
+
   createBoard = () => {
     let board = [];
     const { rows, cols } = this.props;
@@ -72,7 +70,12 @@ class Board extends Component {
             </table>
           </div>
         ) : (
-          <h2>You Win!!!</h2>
+          <div className="Board-Win">
+            <h1>
+              <span className="flux">You</span>
+              <span className="neon">Win!!!</span>
+            </h1>
+          </div>
         )}
       </div>
     );

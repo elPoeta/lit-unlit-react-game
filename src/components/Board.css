@@ -11,6 +11,12 @@
 .Board-Container {
   padding: 2em;
 }
+.Board-Win {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .neon {
   font-family: neon;
   color: #fb4264;
