@@ -61,11 +61,12 @@ class Board extends Component {
     ));
     return (
       <div>
-        <h1>Lit-Unlit</h1>
         {!hasWon ? (
-          <table className="Board">
-            <tbody>{table}</tbody>
-          </table>
+          <div className="Board-Container">
+            <table className="Board">
+              <tbody>{table}</tbody>
+            </table>
+          </div>
         ) : (
           <h2>You Win!!!</h2>
         )}
