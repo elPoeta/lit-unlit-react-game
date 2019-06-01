@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lit-unlit-react-game/static/css/main.00b4ed1a.chunk.css",
+    "main.js": "/lit-unlit-react-game/static/js/main.078b9e26.chunk.js",
+    "main.js.map": "/lit-unlit-react-game/static/js/main.078b9e26.chunk.js.map",
+    "runtime~main.js": "/lit-unlit-react-game/static/js/runtime~main.adbc1644.js",
+    "runtime~main.js.map": "/lit-unlit-react-game/static/js/runtime~main.adbc1644.js.map",
+    "static/js/2.56cb80cd.chunk.js": "/lit-unlit-react-game/static/js/2.56cb80cd.chunk.js",
+    "static/js/2.56cb80cd.chunk.js.map": "/lit-unlit-react-game/static/js/2.56cb80cd.chunk.js.map",
+    "index.html": "/lit-unlit-react-game/index.html",
+    "precache-manifest.d10f4a12821c6310b5519678ec6a67f3.js": "/lit-unlit-react-game/precache-manifest.d10f4a12821c6310b5519678ec6a67f3.js",
+    "service-worker.js": "/lit-unlit-react-game/service-worker.js",
+    "static/css/main.00b4ed1a.chunk.css.map": "/lit-unlit-react-game/static/css/main.00b4ed1a.chunk.css.map"
+  }
+}
