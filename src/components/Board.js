@@ -15,10 +15,10 @@ class Board extends Component {
   }
   createBoard = () => {
     let board = [];
-    const { row, col } = this.props;
-    for (let i = 0; i < row; i++) {
+    const { rows, cols } = this.props;
+    for (let i = 0; i < rows; i++) {
       let aux = [];
-      for (let j = 0; j < col; j++) {
+      for (let j = 0; j < cols; j++) {
         aux.push(Math.floor(Math.random() * 2) ? true : false);
       }
       board.push(aux);
@@ -26,7 +26,25 @@ class Board extends Component {
     return board;
   };
   flipCells = coord => {
-    console.log("COORD ", coord);
+    const { rows, cols } = this.props;
+    const board = this.state.board;
+    const [y, x] = coord.split("-").map(Number);
+
+    const flip = (y, x) => {
+      if (x >= 0 && x < cols && y >= 0 && y < rows) {
+        board[y][x] = !board[y][x];
+      }
+    };
+
+    flip(y, x);
+    flip(y, x - 1);
+    flip(y, x + 1);
+    flip(y - 1, x);
+    flip(y + 1, x);
+
+    const hasWon = board.every(row => row.every(cell => !cell));
+
+    this.setState({ board, hasWon });
   };
   render() {
     const { board, hasWon } = this.state;
@@ -56,8 +74,8 @@ class Board extends Component {
   }
 
   static defaultProps = {
-    row: 5,
-    col: 5
+    rows: 5,
+    cols: 5
   };
 }
 

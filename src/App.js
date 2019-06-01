@@ -4,7 +4,7 @@ import Board from "./components/Board";
 const App = () => {
   return (
     <div className="App">
-      <Board row={5} col={5} />
+      <Board rows={5} cols={5} />
     </div>
   );
 };
