@@ -4,10 +4,9 @@ import "./Cell.css";
 class Cell extends Component {
   constructor(props) {
     super(props);
-    //this.handleClick = this.handleClick.bind(this);
   }
   handleClick = e => {
-    this.props.cellAround();
+    this.props.flipCells();
   };
   render() {
     let classes = "Cell" + (this.props.isLit ? " Cell-lit" : "");
