@@ -63,6 +63,10 @@ class Board extends Component {
       <div>
         {!hasWon ? (
           <div className="Board-Container">
+            <h1>
+              <span className="neon">Un</span>
+              <span className="flux">lit</span>
+            </h1>
             <table className="Board">
               <tbody>{table}</tbody>
             </table>
